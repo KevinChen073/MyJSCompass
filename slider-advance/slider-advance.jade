@@ -1,0 +1,129 @@
+doctype html
+html(lang='en')
+	head
+		title Jade
+		meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+		script(type='text/javascript' src="/js/jquery-2.1.3.min.js")
+		script(type='text/javascript' src="/js/slider-advance.js")
+		link(href='/css/slider-advance.css' rel='stylesheet' type='text/css')
+	body
+		div
+			#slider-advance
+				.left-content
+					ul.list
+						li.active(onclick="slider_select(1)")
+							span
+								|中信芋圆
+						li(onclick="slider_select(2)")
+							span
+								|我又饿了
+						li(onclick="slider_select(3)")
+							span
+								|投食歌
+						li(onclick="slider_select(4)")
+							span
+								|今天没吃饭
+						li(onclick="slider_select(5)")
+							span
+								|好想买宵夜
+				.btn-content
+					a.left-btn(onclick="clickBtn('left')" href=("javascript:void(0)"))
+							img(src="/images/button_scroleft.png")
+					a.right-btn(onclick="clickBtn('right')" href=("javascript:void(0)"))
+							img(src="/images/button_scroright.png")
+				#right-content1.right-content.activeContent
+					.pic-content
+						div.curContent
+							img(src="/images/pic1-1.jpg")
+						div.unCur
+							img(src="/images/pic1-3.jpg")
+						div.unCur
+							img(src="/images/pic1-2.jpg")
+					.titlelist
+						div.curTitle
+							.title 1/3
+							span
+								|这个东西好好吃，你要不要也来试一下？
+						div.unCurTitle
+							.title 3/3
+							span
+								|这个东西好好吃，你要不要也来试一下？
+						div.unCurTitle
+							.title 2/3
+							span
+								|这个东西好好吃，你要不要也来试一下？
+				#right-content2.right-content
+					.pic-content
+						div.curContent
+							img(src="/images/pic2-1.jpg")
+						div.unCur
+							img(src="/images/pic2-2.jpg")
+						div.unCur
+							img(src="/images/pic2-3.jpg")
+					.titlelist
+						.title 1/3
+						span
+							|这个东西好好吃，你要不要也来试一下？
+				#right-content3.right-content
+					.pic-content
+						div.curContent
+							img(src="/images/pic2-1.jpg")
+						div.unCur
+							img(src="/images/pic2-2.jpg")
+						div.unCur
+							img(src="/images/pic2-3.jpg")
+					.titlelist
+						div.curTitle
+							.title 1/3
+							span
+								|这个东西好好吃，你要不要也来试一下？
+						div.unCurTitle
+							.title 3/3
+							span
+								|这个东西好好吃，你要不要也来试一下？
+						div.unCurTitle
+							.title 2/3
+							span
+								|这个东西好好吃，你要不要也来试一下？
+				#right-content4.right-content
+					.pic-content
+						div.curContent
+							img(src="/images/pic2-1.jpg")
+						div.unCur
+							img(src="/images/pic2-2.jpg")
+						div.unCur
+							img(src="/images/pic2-3.jpg")
+					.titlelist
+						div.curTitle
+							.title 1/3
+							span
+								|这个东西好好吃，你要不要也来试一下？
+						div.unCurTitle
+							.title 3/3
+							span
+								|这个东西好好吃，你要不要也来试一下？
+						div.unCurTitle
+							.title 2/3
+							span
+								|这个东西好好吃，你要不要也来试一下？
+				#right-content5.right-content
+					.pic-content
+						div.curContent
+							img(src="/images/pic2-1.jpg")
+						div.unCur
+							img(src="/images/pic2-2.jpg")
+						div.unCur
+							img(src="/images/pic2-3.jpg")
+					.titlelist
+						div.curTitle
+							.title 1/3
+							span
+								|这个东西好好吃，你要不要也来试一下？
+						div.unCurTitle
+							.title 3/3
+							span
+								|这个东西好好吃，你要不要也来试一下？
+						div.unCurTitle
+							.title 2/3
+							span
+								|这个东西好好吃，你要不要也来试一下？
