@@ -1,0 +1,128 @@
+1、导航使用11的样式
+	服务热线一栏再窄一点，换成footer的颜色
+
+
+1、导航使用11的样式
+	服务热线一栏再窄一点，换成footer的颜色
+<!--鼠标移至会改变文字-->
+ <div class="s_banner_a">
+        <div class="banner_col">
+            <div class="word">
+                <img src="__ROOT__/Style/gold/images/modify616/word_youzhiliicai.png">
+            </div>
+            <div class="pic">
+                <img src="__ROOT__/Style/gold/images/modify616/money_1.png">
+                <div class="descripe">
+                    <ul>
+                        <li>投资门槛低</li>
+                        <li>年收益稳定</li>
+                        <li>投资期限自由规划</li>
+                    </ul>
+                    <img src="__ROOT__/Style/gold/images/modify616/money_2.png">
+                </div>
+            </div>
+        </div>
+        <div class="banner_col_2">
+
+        </div>
+        <div class="banner_col" style="">
+            <div class="word">
+                <img src="__ROOT__/Style/gold/images/modify616/word_anquanbaozhang.png">
+            </div>
+            <div class="pic">
+                <img src="__ROOT__/Style/gold/images/modify616/safe_1.png" style="top: 10px;left:20px;">
+                <div class="descripe">
+                    <ul>
+                        <li>严格风控审核</li>
+                        <li>流通透明化</li>
+                        <li>第三方资金托管</li>
+                    </ul>
+                    <img src="__ROOT__/Style/gold/images/modify616/safe_2.png">
+                </div>
+            </div>
+        </div>
+        <div class="banner_col_2">
+
+        </div>
+        <div class="banner_col" style="">
+            <div class="word">
+                <img src="__ROOT__/Style/gold/images/modify616/word_tiexinfuwu.png">
+            </div>
+            <div class="pic">
+                <img src="__ROOT__/Style/gold/images/modify616/heart_1.png" style="top: 20px;">
+                <div class="descripe">
+                    <ul style="left: 10px;">
+                        <li>快速注册  自动投标</li>
+                        <li>手续简便  随时提现</li>
+                    </ul>
+                    <br>
+                    <img src="__ROOT__/Style/gold/images/modify616/heart_2.png">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+  <script type="text/javascript">
+  $(function(){
+      $(".banner_col").each(function(){
+        $(this).on("mouseenter",function(){
+            $(this).find(".pic > img").animate({opacity:0},200);
+            $(this).find(".pic .descripe").animate({opacity:1},200);
+        });
+        $(this).on("mouseleave",function(){
+            $(this).find(".pic > img").animate({opacity:1},200);
+            $(this).find(".pic .descripe").animate({opacity:0},200);
+        });
+    });
+  });
+
+  </script>
+
+  <!--美琪逗比系列-->
+
+      <div id="play"style="position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 5em;
+  background-color: black;
+  top: 0;
+  text-align: center;display: none;">
+    美琪是逗比！！
+<script type="text/javascript">
+  $(function(){
+    function play(){
+        $("#play").show();
+      }
+    setTimeout(play,1000);
+  });
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+</script>
+<!--图片转换系列-->
+
+<input type="image" class="fxnsearchbtn" src="/Style/gold/images/modify628/search.png" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image12','','__ROOT__/Style/gold/images/modify616/btn_denglu_2.png',1)" name="Image12" border="0" id="Image12" />
