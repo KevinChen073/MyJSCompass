@@ -4,7 +4,7 @@
 /*2、下拉菜单
 /*3、APP的消息提示框
 /*4、密码确认
-/*
+/*5、删除确认
 /*
 ///////////////////////////////////////////////////////
 
@@ -75,11 +75,11 @@ $(function(){
 });
 
 /**
- * [appMsgDialog 在WebAPP中显示msg]
+ * [appMsgDialog 在WebAPP中显示msg，并且点击可以使之消失]
  * @param  {string} msg [需要显示的文字]
  * @return {null}     [无]
  * @author Kevin Chen
- * @version v1.1
+ * @version v1.2
  */
 function appMsgDialog(msg){
   var time = 5000;//显示的时间
@@ -88,6 +88,12 @@ function appMsgDialog(msg){
   $("html").append(dialog);
 
   dialog.fadeIn();
+  //使对话框在点击后消失
+  dialog.on("click",function(){
+    dialog.fadeOut(function(){
+      dialog.remove();
+    });
+  });
   setTimeout(function(){
     dialog.fadeOut(function(){
       dialog.remove();
@@ -151,6 +157,7 @@ function BlurRepwd() {
         $(td).html(GetP("reg_wrong", arrWrong["dvRepwd"]));
     }
 }
+
 //检验 验证码
 function BlurCode() {
     var txt = "#txtCode";
@@ -164,4 +171,16 @@ function BlurCode() {
     else {
         $(td).html(GetP("reg_wrong", arrWrong["dvCode"]));
     }
+}
+
+//属性：使该输入框只能输入数字
+html(onkeyup="this.value=this.value.replace(/\D/g,'')")
+
+
+//删除确认
+function delConfirm( message ){
+    if(message == null){
+        message = "��ㄧ‘瀹�瑕������ゆ��璁板�����锛�";
+    }
+    return window.confirm(message);
 }
